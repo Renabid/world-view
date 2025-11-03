@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Earth - Live Weather Viewer</title>
+
+  <!-- ✅ CesiumJS -->
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.123/Build/Cesium/Cesium.js"></script>
+  <link
+    href="https://cesium.com/downloads/cesiumjs/releases/1.123/Build/Cesium/Widgets/widgets.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="cesiumContainer"></div>
+
+  <div id="weatherPanel">
+    <h2>🌎 Live Weather</h2>
+    <p id="locationName">📍 Mount Everest</p>
+    <p id="condition">Loading weather...</p>
+    <p id="temp"></p>
+    <p id="wind"></p>
+    <p id="humidity"></p>
+    <p class="tip">🖱️ Click anywhere on Earth to see live weather</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

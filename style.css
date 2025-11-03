@@ -1,0 +1,45 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+#cesiumContainer {
+  width: 100%;
+  height: 100%;
+}
+
+#weatherPanel {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  z-index: 5;
+}
+
+#weatherPanel h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 4px;
+}
+
+#weatherPanel p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+.tip {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #ccc;
+  font-style: italic;
+}
