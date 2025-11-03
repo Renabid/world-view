@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World View</title>
+
+  <!-- ✅ Load CesiumJS -->
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.123/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.123/Build/Cesium/Widgets/widgets.css" rel="stylesheet" />
+
+  <!-- Custom style -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="cesiumContainer"></div>
+
+  <div id="weatherPanel">
+    <h2>🏔️ Mount Everest Weather</h2>
+    <p id="condition">Loading weather...</p>
+    <p id="temp"></p>
+    <p id="wind"></p>
+    <p id="humidity"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
